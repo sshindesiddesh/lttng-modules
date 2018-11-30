@@ -265,7 +265,6 @@ long lttng_abi_add_context(struct file *file,
 static
 long lttng_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 {
-	printk(KERN_DEBUG "ioctl called\n");
 	switch (cmd) {
 	case LTTNG_KERNEL_OLD_SESSION:
 	case LTTNG_KERNEL_SESSION:
